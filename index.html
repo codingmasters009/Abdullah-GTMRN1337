@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="./custom.css" rel="stylesheet">
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+          <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+              <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link align-middle px-0">
+                              <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Main Navigator</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                          <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Analytic</span>  </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Pages</span>  </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="bg-dark">
+                        Bootstrap Component
+                      </li>
+                      <li>
+                          <a href="#" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Component</span></a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link px-0 align-middle">
+                          <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Form_component</span></a>
+                  </li>
+                      <li>
+                          <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                              <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
+                          <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
+                              <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                      </li>
+                  </ul>
+                  <hr>
+                  <div class="dropdown pb-4">
+                      
+                      <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                          <li><a class="dropdown-item" href="#">New project...</a></li>
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col py-3 bg-gray">
+            <img src="data:image/png;base64,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" class="rounded-circle" style="width: 50px;"
+            alt="Avatar" />
+          </div>
+          <div class="p-3">
+            <h6 >Analytical Deshboard</h6>
+            <p>whats going on my web</p>
+            <button type="button" class="btn btn-success ">New</button>
+
+            
+
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+          
+      </div>
+      
+  </div>
+  
+  </body>
+</html>
